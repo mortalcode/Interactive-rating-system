@@ -46,6 +46,37 @@ body {
   padding: 35px 40px;
   display: grid;
 }
+.card2 {
+  width: 500px;
+  height: 500px;
+  border-radius: 40px;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(32, 44, 61),
+    rgb(27, 36, 46) 25%
+  );
+  padding: 35px 40px;
+  text-align: center;
+}
+
+.internal-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+.illustration {
+  width: 250px;
+}
+.pop-up {
+  border: 1px red;
+  padding: 12px;
+  border-radius: 35px;
+  background-color: var(--Dark-Blue-buttons);
+  margin: 30px;
+  color: var(--Orange);
+}
 
 h1 {
   font-weight: 400;
@@ -74,23 +105,23 @@ p {
   padding-top: 30px;
   padding-bottom: 2px;
 }
-h2 {
+.rating-btn {
   background-color: var(--Dark-Blue-buttons);
+  color: var(--Light-Grey);
   width: 60px;
   height: 60px;
-  font-weight: 400;
-  padding: 10px;
   font-size: 22px;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
+  border: 0;
 }
-h2:hover {
+.rating-btn:hover {
   background-color: var(--Orange);
   cursor: pointer;
 }
-button {
+.submit-btn {
   height: 60px;
   border-radius: 30px;
   background-color: var(--Orange);
@@ -98,10 +129,15 @@ button {
   font-size: 18px;
   font-weight: 900;
   margin-top: 25px;
-  box-shadow: 1px 10px 50px rgba(0, 0, 0, 0.562);
+  box-shadow: 1px 10px 50px rgba(0, 0, 0, 0.315);
   text-transform: uppercase;
+  border: 0;
 }
-button:hover {
+.submit-btn:hover {
   background-color: var(--White);
   color: var(--Orange);
+}
+.selected {
+  background-color: var(--Medium-Grey);
+  color: white;
 }

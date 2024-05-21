@@ -1,0 +1,107 @@
+:root {
+  --Orange: hsl(25, 97%, 53%);
+  --White: hsl(0, 0%, 100%);
+  --Light-Grey: hsl(217, 12%, 63%);
+  --Medium-Grey: rgb(124, 135, 152);
+  --Dark-Blue: rgb(37, 45, 55);
+  --Dark-Blue-buttons: rgb(45, 55, 68);
+  --Very-Dark-Blue: hsl(216, 12%, 8%);
+}
+
+/* ===================================================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Overpass", sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+/* ===================================================================== */
+
+.main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--Very-Dark-Blue);
+  color: var(--White);
+}
+
+.card1 {
+  width: 500px;
+  height: 500px;
+  border-radius: 40px;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(32, 44, 61),
+    rgb(27, 36, 46) 25%
+  );
+  padding: 35px 40px;
+  display: grid;
+}
+
+h1 {
+  font-weight: 400;
+}
+p {
+  font-size: 18px;
+  line-height: 30px;
+  color: var(--Light-Grey);
+  margin-top: 10px;
+}
+
+.image {
+  width: 60px;
+  height: 60px;
+  padding-top: 20px;
+  text-align: center;
+  margin-bottom: 30px;
+  border-radius: 50%;
+  background-color: var(--Dark-Blue-buttons);
+}
+
+.rating {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 2px;
+}
+h2 {
+  background-color: var(--Dark-Blue-buttons);
+  width: 60px;
+  height: 60px;
+  font-weight: 400;
+  padding: 10px;
+  font-size: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+h2:hover {
+  background-color: var(--Orange);
+  cursor: pointer;
+}
+button {
+  height: 60px;
+  border-radius: 30px;
+  background-color: var(--Orange);
+  color: var(--White);
+  font-size: 18px;
+  font-weight: 900;
+  margin-top: 25px;
+  box-shadow: 1px 10px 50px rgba(0, 0, 0, 0.562);
+  text-transform: uppercase;
+}
+button:hover {
+  background-color: var(--White);
+  color: var(--Orange);
+}
